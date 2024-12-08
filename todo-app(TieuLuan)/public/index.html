@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Học Tập</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List Học Tập</h1>
+
+        <!-- Thêm công việc học tập -->
+        <div class="form-section">
+            <h2>Thêm Công Việc</h2>
+            <div class="form-group">
+                <input type="text" id="task-title" placeholder="Tên công việc học tập">
+                <input type="date" id="task-date">
+                <select id="task-priority">
+                    <option value="Cao">Cao</option>
+                    <option value="Trung Bình">Trung Bình</option>
+                    <option value="Thấp">Thấp</option>
+                </select>
+            </div>
+            <button id="add-task-btn">Thêm</button>
+        </div>
+
+        <!-- Tìm kiếm công việc -->
+        <div class="search-section">
+            <h2>Tìm Kiếm Công Việc</h2>
+            <input type="text" id="search-input" placeholder="Nhập tên công việc">
+        </div>
+
+        <div class="table-section">
+            <h2>Danh Sách Công Việc</h2>
+            <table id="task-table">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên Công Việc</th>
+                        <th>Ngày Hạn</th>
+                        <th>Ưu Tiên</th>
+                        <th>Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dữ liệu công việc -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Chỉnh sửa công việc -->
+        <div class="form-section edit-form-section">
+            <h2>Chỉnh Sửa Công Việc</h2>
+            <div class="form-group">
+                <input type="hidden" id="edit-task-index">
+                <input type="text" id="edit-task-title" placeholder="Tên công việc học tập">
+                <input type="date" id="edit-task-date">
+                <select id="edit-task-priority">
+                    <option value="Cao">Cao</option>
+                    <option value="Trung Bình">Trung Bình</option>
+                    <option value="Thấp">Thấp</option>
+                </select>
+            </div>
+            <button id="save-task-btn">Lưu</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
